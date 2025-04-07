@@ -1,7 +1,7 @@
 import { useState } from "react";
 import cityName from "./cities.json";
 const Input = () => {
-  const [hint, setHint] = useState();
+  const [hint, setHint] = useState("");
   const [input, setInput] = useState("");
   const searchHandler = (e) => {
     const value = e.target.value;
