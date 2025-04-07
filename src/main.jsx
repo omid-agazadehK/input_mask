@@ -6,8 +6,8 @@ const Input = () => {
   const searchHandler = (e) => {
     const value = e.target.value;
     setInput(value);
-    const moz = cityName.filter((a) => a.startsWith(value));
-    setHint(input.length >= 0 ? moz[0] : "");
+    const finalFilter = cityName.filter((a) => a.startsWith(value));
+    setHint(input.length >= 0 ? finalFilter[0] : "");
   };
   return (
     <div className="input">
